@@ -1,6 +1,3 @@
-Note: Luke is the PO
-MyAdventis: .NET mvc 5 with WCF service with AngularJS (small) . no need to keep the current UI
-
 # do we need a centralized IAM
 - less than 5 apps (all web apps)
 - do Android and IOS
