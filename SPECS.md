@@ -112,13 +112,16 @@
 - Estimation:
   - out of the box (no customization required)
 
+## Password migration
+- up to 5 days
+
 ## B2C Pricing estimation
 - Tiers:
   - P1 tier: free for the FIRST 50k Montly Active Users (meaning only the users that login at least once in that month)
     - you pay 0.0044 AUD per additional MAU (e.g. $220 for 100,000 users)
   - P2 tier: free for the FIRST 50k Montly Active Users (meaning only the users that login at least once in that month)
     - you pay 0.022 AUD per additional MAU (e.g. $1,100 for 100,000 users)
-    - 
+  - SMS cost if sent from AzureB2C: 4 cents (how many sent per month?)
 
 ## Total estimate
 - Setup Tenant: 1d
@@ -131,9 +134,13 @@
 - 3rd party integrator: 1h
 - External authentication: 1h
 - Sign sign out:1h
+- password migrations:5d
 - Total: 
-  - Min: 6 days (simple out of the box style changes only)
-  - Max: 19 days (high complex customization)
+  - Min: 11 days (simple out of the box style changes only)
+  - Max: 24 days (high complex customization) 
 
-
-
+# notes
+- 2 social login ids will need to be linked using custom property (e.g. Adventists_ID)
+- with Azure B2C, you can't migrate social accounts
+- it is the responsibility of the app to link those external ids
+- how password is migrated: there is no tools out of the box for password migration, with Azure B2C, there is no out of the box
